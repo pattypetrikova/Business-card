@@ -1,0 +1,129 @@
+* {
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.insights {
+  color: #AD60DD;
+}
+
+.section {
+  height: 100vh;
+  width: 100vw;
+  background-color: #0A0C1B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #1C1938;
+  max-width: 1200px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+@media (max-width: 1000px) {
+  .block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80%;
+  }
+}
+
+.block__topheadline {
+  font-size: 2em;
+  font-family: 'Roboto';
+  color: white;
+  padding-bottom: 30px;
+  font-weight: 700;
+}
+
+.block__itemwrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.block__item {
+  width: 20%;
+}
+
+.block__description {
+  color: #B5B3C8;
+  margin-bottom: 70px;
+  display: block;
+  line-height: 1.5;
+  font-size: 15px;
+  font-family: 'Roboto';
+  font-weight: 400;
+}
+
+.block__text {
+  margin: auto;
+  padding-left: 5vw;
+  padding-right: 10vw;
+  width: 50%;
+}
+
+@media (max-width: 1000px) {
+  .block__text {
+    width: 80%;
+    padding-bottom: 100px;
+  }
+}
+
+.block__image {
+  width: 50%;
+}
+
+@media (max-width: 1000px) {
+  .block__image {
+    margin: auto;
+  }
+}
+
+.block__image img {
+  width: 100%;
+}
+
+.block p {
+  color: #B5B3C8;
+}
+
+.block .description {
+  color: #B5B3C8;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: 'Roboto';
+  font-weight: 400;
+}
+
+.block .number {
+  color: white;
+  font-weight: 700;
+  font-size: 22px;
+  font-family: 'Roboto';
+}
+/*# sourceMappingURL=style.css.map */

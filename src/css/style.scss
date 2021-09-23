@@ -1,0 +1,123 @@
+@import "vars";
+
+* {
+    box-sizing: border-box !important;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.insights{
+    color: $accent ;
+}
+
+.section {
+    height: 100vh;
+    width: 100vw;
+    background-color: $background;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.block {
+    display: flex;
+    background-color: $card;
+    max-width: 1200px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    @media (max-width: 1000px) {
+        flex-direction: column;
+        width: 80%;
+      
+    }
+
+    &__topheadline {
+        font-size: 2em;
+        font-family: 'Roboto';
+        color: white;
+        padding-bottom: 30px;
+        font-weight: 700;
+
+    }
+
+    &__itemwrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 20%;
+    }
+
+    &__description {
+    color: $fontcollor;
+    margin-bottom: 70px;
+    display: block;
+    line-height: 1.5;
+    font-size: 15px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    }
+ 
+
+ &__text {
+
+        margin: auto;
+        padding-left: 5vw ;
+        padding-right: 10vw;
+        width: 50%;
+
+        @media (max-width: 1000px) {
+        width: 80%;
+        padding-bottom: 100px;
+        }
+
+       
+    }
+
+    &__image {
+        width: 50%;
+        @media (max-width: 1000px) {
+            margin: auto;
+            
+        }
+       
+    }
+    &__image img{
+        width: 100%;
+         @media (max-width: 1000px) {
+            
+     
+    }
+
+}
+
+p {
+    color: $fontcollor;
+    
+}
+
+.description {
+    color: $fontcollor;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+.number {
+    color: white;
+    font-weight: 700;
+    font-size: 22px;
+    font-family: 'Roboto';
+
+}
+}
